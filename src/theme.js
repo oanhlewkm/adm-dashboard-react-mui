@@ -1,8 +1,5 @@
 import { createContext, useState, useMemo } from "react";
 import { createTheme } from "@mui/material/styles";
-import { color } from "@mui/system";
-import {Typography} from '@mui/material'
-
 
 // color tokens
 export const tokens = (mode) => ({
@@ -29,7 +26,6 @@ export const tokens = (mode) => ({
       800: "#080b12",
       900: "#040509"
     },
-    
     greenAccent: {
       100: "#dbf5ee",
       200: "#b7ebde",
@@ -41,7 +37,6 @@ export const tokens = (mode) => ({
       800: "#1e5245",
       900: "#0f2922"
     },
-    
     redAccent: {
       100: "#f8dcdb",
       200: "#f1b9b7",
@@ -87,7 +82,6 @@ export const tokens = (mode) => ({
       200: "#080b12",
       100: "#040509"
     },
-    
     greenAccent: {
       900: "#dbf5ee",
       800: "#b7ebde",
@@ -99,7 +93,6 @@ export const tokens = (mode) => ({
       200: "#1e5245",
       100: "#0f2922"
     },
-    
     redAccent: {
       900: "#f8dcdb",
       800: "#f1b9b7",
@@ -126,7 +119,6 @@ export const tokens = (mode) => ({
 });
 
 // mui theme
-
 export const themeSetting = (mode) => {
   const colors = tokens(mode);
 
@@ -197,7 +189,6 @@ export const themeSetting = (mode) => {
 };
 
 // context for color mode
-
 export const ColorModeConext = createContext({
   toogleColorMode: () => {}
 })
